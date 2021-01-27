@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Traffic lights" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="fv4-dN-ieS">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Traffic light" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="fv4-dN-ieS">
                                 <rect key="frame" x="40" y="373.66666666666669" width="295" height="65"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="50"/>
                                 <color key="textColor" systemColor="systemGroupedBackgroundColor"/>
@@ -26,7 +26,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
                         <constraints>
-                            <constraint firstItem="fv4-dN-ieS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="Je9-aS-flC"/>
+                            <constraint firstItem="fv4-dN-ieS" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="Je9-aS-flC"/>
                             <constraint firstItem="fv4-dN-ieS" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Oke-ur-uZK"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fv4-dN-ieS" secondAttribute="trailing" constant="40" id="PxP-UE-B0g"/>
                             <constraint firstItem="fv4-dN-ieS" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="l3B-Qf-Xr2"/>
