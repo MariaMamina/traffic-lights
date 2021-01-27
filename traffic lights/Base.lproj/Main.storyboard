@@ -18,7 +18,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yfB-vy-9FF">
                                 <rect key="frame" x="102" y="762" width="210" height="60"/>
-                                <color key="backgroundColor" red="0.58119027229999998" green="0.79215562579999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.4439231837" green="0.7462469061" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="210" id="VOQ-HQ-b5t"/>
                                 </constraints>
@@ -26,25 +26,28 @@
                                 <state key="normal" title="START">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="lightChanging" destination="BYZ-38-t0r" eventType="touchUpInside" id="nyB-Yf-Lz1"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="4gM-rp-3pA">
                                 <rect key="frame" x="132" y="94" width="150" height="510"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qqn-sq-bb6">
+                                    <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qqn-sq-bb6">
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                         <color key="backgroundColor" systemColor="systemRedColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="qqn-sq-bb6" secondAttribute="height" multiplier="1:1" id="sg1-gK-LSj"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VwM-P8-vJr">
+                                    <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VwM-P8-vJr">
                                         <rect key="frame" x="0.0" y="180" width="150" height="150"/>
                                         <color key="backgroundColor" red="1" green="0.94189693699999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="VwM-P8-vJr" secondAttribute="height" multiplier="1:1" id="2bP-ao-wXC"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6pR-2v-3JZ">
+                                    <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6pR-2v-3JZ">
                                         <rect key="frame" x="0.0" y="360" width="150" height="150"/>
                                         <color key="backgroundColor" red="0.0" green="0.75620596750000002" blue="0.10616773610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -55,7 +58,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemGray4Color"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
                         <constraints>
                             <constraint firstItem="yfB-vy-9FF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BaO-XB-IC5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yfB-vy-9FF" secondAttribute="bottom" constant="40" id="P0f-fP-sBU"/>
@@ -64,6 +67,12 @@
                             <constraint firstItem="4gM-rp-3pA" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="75:409" id="xOA-Uw-FjK"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="greenLightView" destination="6pR-2v-3JZ" id="nk5-oT-Kdu"/>
+                        <outlet property="lightChangeButton" destination="yfB-vy-9FF" id="MSO-bB-aSy"/>
+                        <outlet property="redLightView" destination="qqn-sq-bb6" id="J1N-MZ-SdM"/>
+                        <outlet property="yellowLightView" destination="VwM-P8-vJr" id="zk9-Kx-zqO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -71,8 +80,8 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemGray4Color">
-            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
